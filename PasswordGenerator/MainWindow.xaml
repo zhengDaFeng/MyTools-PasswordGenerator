@@ -42,7 +42,7 @@
                     Margin="5, 10, 10, 10"
                     Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
                     ToolTip="复制当前密码到剪切板"
-                    Click="BtnCopy_Click">
+                    Click="btnCopy_Click">
                 <materialDesign:PackIcon
                     Kind="ContentCopy"
                     Height="24"

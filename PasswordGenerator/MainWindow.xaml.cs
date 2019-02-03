@@ -131,7 +131,7 @@ namespace PasswordGenerator
                 (bool)cbSpecial.IsChecked);
         }
 
-        private void BtnCopy_Click(object sender, RoutedEventArgs e)
+        private void btnCopy_Click(object sender, RoutedEventArgs e)
         {
             Clipboard.SetDataObject(tbPassword.Text);
         }
