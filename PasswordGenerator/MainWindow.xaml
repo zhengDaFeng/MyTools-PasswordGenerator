@@ -30,15 +30,19 @@
                 Margin="35, 10, 35, 10" 
                 Minimum="4"
                 Maximum="24" AutoToolTipPlacement="BottomRight" SmallChange="1" Value="12"/>
-        <Button x:Name="btnGenerate" Width="100" ToolTip="密码生成" Click="btnGenerate_Click">Generate</Button>
+        <Button x:Name="btnGenerate" Width="180" ToolTip="密码生成" Click="btnGenerate_Click">Generate</Button>
         <StackPanel 
             Orientation="Horizontal" 
-            HorizontalAlignment="Center"
-            Margin="10, 10, 10, 10">
-            <TextBox x:Name="tbPassword" materialDesign:HintAssist.Hint="Password" Width="200" ToolTip="已生成的随机密码"></TextBox>
-            <Button x:Name="btnCopy" 
-                Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
-                ToolTip="复制当前密码到剪切板" Click="BtnCopy_Click">
+            HorizontalAlignment="Center">
+            <TextBox x:Name="tbPassword" 
+                     materialDesign:HintAssist.Hint=" Password " 
+                     ToolTip="已生成的随机密码"
+                     Margin="10, 10, 5, 10"></TextBox>
+            <Button x:Name="btnCopy"
+                    Margin="5, 10, 10, 10"
+                    Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                    ToolTip="复制当前密码到剪切板"
+                    Click="BtnCopy_Click">
                 <materialDesign:PackIcon
                     Kind="ContentCopy"
                     Height="24"
